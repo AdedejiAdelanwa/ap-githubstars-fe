@@ -17,8 +17,8 @@ const App = () => {
     try {
       const response = await fetch(
         repoName
-          ? `http://localhost:3000/github/repos/${owner}/${repoName}`
-          : `http://localhost:3000/github/repos/${owner}`
+          ? `https://github-repo-stars-be.onrender.com/github/repos/${owner}/${repoName}`
+          : `https://github-repo-stars-be.onrender.com/github/repos/${owner}`
       );
       const data = await response.json();
       console.log(data);
